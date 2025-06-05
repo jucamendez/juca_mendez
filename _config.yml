@@ -1,8 +1,0 @@
-theme: jekyll-theme-minimal
-plugins:
-  - jekyll-redirect-from
-
-redirect_from:
-  - "/"
-  - "/index.html"
-  - "/README.md"
