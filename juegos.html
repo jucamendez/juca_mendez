@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty | Juegos</title>
+    <meta name="description" content="Todos los juegos de la franquicia Call of Duty">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/cod-logo.png" alt="Call of Duty Logo" class="logo-img">
+                CALL OF DUTY
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="contenido.html">Contenido</a>
+                <a href="juegos.html" class="active">Juegos</a>
+                <a href="referencias.html">Referencias</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header games-header">
+        <div class="header-content">
+            <h1>JUEGOS</h1>
+            <p>Explora todos los títulos de la franquicia Call of Duty</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Games Filter -->
+        <section class="section filter-section">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="era-filter">Filtrar por época:</label>
+                    <select id="era-filter" class="filter-select">
+                        <option value="all">Todas las épocas</option>
+                        <option value="ww2">Segunda Guerra Mundial</option>
+                        <option value="modern">Era Moderna</option>
+                        <option value="future">Futuro</option>
+                        <option value="coldwar">Guerra Fría</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="dev-filter">Filtrar por desarrollador:</label>
+                    <select id="dev-filter" class="filter-select">
+                        <option value="all">Todos los desarrolladores</option>
+                        <option value="iw">Infinity Ward</option>
+                        <option value="treyarch">Treyarch</option>
+                        <option value="shg">Sledgehammer</option>
+                    </select>
+                </div>
+                <button id="reset-filters" class="filter-reset">Reiniciar filtros</button>
+            </div>
+        </section>
+
+        <!-- Games Grid -->
+        <section class="section games-grid-section">
+            <div class="games-grid">
+                <!-- Modern Warfare II -->
+                <div class="game-card" data-era="modern" data-dev="iw" id="mw2" data-aos="fade-up">
+                    <div class="game-image">
+                        <img src="assets/mw2.jpg" alt="Modern Warfare II">
+                        <div class="game-badge">Nuevo</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty: Modern Warfare II</h3>
+                        <div class="game-meta">
+                            <span class="game-year">2022</span>
+                            <span class="game-dev">Infinity Ward</span>
+                        </div>
+                        <p class="game-desc">Secuela del exitoso reinicio de 2019, con una campaña intensa y un multijugador innovador.</p>
+                        <div class="game-features">
+                            <span class="feature-tag">Campaign</span>
+                            <span class="feature-tag">Multiplayer</span>
+                            <span class="feature-tag">Warzone 2.0</span>
+                        </div>
+                        <a href="#" class="game-link">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Warzone -->
+                <div class="game-card" data-era="modern" data-dev="all" id="warzone" data-aos="fade-up" data-aos-delay="100">
+                    <div class="game-image">
+                        <img src="assets/warzone.jpg" alt="Warzone">
+                        <div class="game-badge">Free</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty: Warzone</h3>
+                        <div class="game-meta">
+                            <span class="game-year">2020</span>
+                            <span class="game-dev">Activision</span>
+                        </div>
+                        <p class="game-desc">Battle Royale gratuito con hasta 150 jugadores en el mapa de Verdansk y posteriormente Caldera.</p>
+                        <div class="game-features">
+                            <span class="feature-tag">Battle Royale</span>
+                            <span class="feature-tag">Plunder</span>
+                            <span class="feature-tag">Crossplay</span>
+                        </div>
+                        <a href="#" class="game-link">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Black Ops Cold War -->
+                <div class="game-card" data-era="coldwar" data-dev="treyarch" id="coldwar" data-aos="fade-up" data-aos-delay="200">
+                    <div class="game-image">
+                        <img src="assets/coldwar.jpg" alt="Black Ops Cold War">
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty: Black Ops Cold War</h3>
+                        <div class="game-meta">
+                            <span class="game-year">2020</span>
+                            <span class="game-dev">Treyarch</span>
+                        </div>
+                        <p class="game-desc">Ambientado en la Guerra Fría, con una narrativa intrigante y decisiones que afectan la trama.</p>
+                        <div class="game-features">
+                            <span class="feature-tag">Campaign</span>
+                            <span class="feature-tag">Multiplayer</span>
+                            <span class="feature-tag">Zombies</span>
+                        </div>
+                        <a href="#" class="game-link">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Vanguard -->
+                <div class="game-card" data-era="ww2" data-dev="shg" id="vanguard" data-aos="fade-up">
+                    <div class="game-image">
+                        <img src="assets/vanguard.jpg" alt="Vanguard">
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty: Vanguard</h3>
+                        <div class="game-meta">
+                            <span class="game-year">2021</span>
+                            <span class="game-dev">Sledgehammer</span>
+                        </div>
+                        <p class="game-desc">Regreso a la Segunda Guerra Mundial con una campaña que sigue a soldados de diferentes naciones.</p>
+                        <div class="game-features">
+                            <span class="feature-tag">Campaign</span>
+                            <span class="feature-tag">Multiplayer</span>
+                            <span class="feature-tag">Zombies</span>
+                        </div>
+                        <a href="#" class="game-link">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Modern Warfare (2019) -->
+                <div class="game-card" data-era="modern" data-dev="iw" data-aos="fade-up" data-aos-delay="100">
+                    <div class="game-image">
+                        <img src="assets/mw2019.jpg" alt="Modern Warfare">
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty: Modern Warfare</h3>
+                        <div class="game-meta">
+                            <span class="game-year">2019</span>
+                            <span class="game-dev">Infinity Ward</span>
+                        </div>
+                        <p class="game-desc">Reinicio de la serie Modern Warfare con un nuevo motor gráfico y mecánicas de juego realistas.</p>
+                        <div class="game-features">
+                            <span class="feature-tag">Campaign</span>
+                            <span class="feature-tag">Multiplayer</span>
+                            <span class="feature-tag">Spec Ops</span>
+                        </div>
+                        <a href="#" class="game-link">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Black Ops 4 -->
+                <div class="game-card" data-era="future" data-dev="treyarch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="game-image">
+                        <img src="assets/bo4.jpg" alt="Black Ops 4">
+                    </div>
+                    <div class="game-info">
+                        <h3>Call of Duty: Black Ops 4</h3>
+                        <div class="game-meta">
+                            <span class="game-year">2018</span>
+                            <span class="game-dev">Treyarch</span>
+                        </div>
+                        <p class="game-desc">Primer Call of Duty sin campaña para un jugador, enfocado en multijugador, zombies
